@@ -971,6 +971,17 @@
     <Compile Include="Robots\BotFactory.cs" />
     <Compile Include="Robots\CounterTrend\ClusterCountertrend.cs" />
     <Compile Include="Robots\Engines\EnginePair.cs" />
+    <Compile Include="Robots\FrontRunner.cs" />
+    <Compile Include="Robots\FrontRunner\ViewModels\BaseVM.cs" />
+    <Compile Include="Robots\FrontRunner\ViewModels\VM.cs" />
+    <Compile Include="Robots\FrontRunner\Views\FrontRunnerUi.xaml.cs">
+      <DependentUpon>FrontRunnerUi.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Robots\FrontRunner_2\Models\FrontRunner_2.cs" />
+    <Compile Include="Robots\FrontRunner_2\ViewModels\VM.cs" />
+    <Compile Include="Robots\FrontRunner_2\Views\FrontRunner_2_Ui.xaml.cs">
+      <DependentUpon>FrontRunner_2_Ui.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Robots\MyRobot.cs" />
     <Compile Include="Robots\OnScriptIndicators\GridSample.cs" />
     <Compile Include="Robots\Engines\CandleEngine.cs" />
@@ -1572,6 +1583,14 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Robots\FrontRunner\Views\FrontRunnerUi.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Robots\FrontRunner_2\Views\FrontRunner_2_Ui.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Robots\MarketMaker\PairTraderSimpleUi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -1793,6 +1812,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Market\Servers\Huobi\FuturesSwap\Entities\" />
+    <Folder Include="Robots\FrontRunner\Models\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\generateButton.png" />
