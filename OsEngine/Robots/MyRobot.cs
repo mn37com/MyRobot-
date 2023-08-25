@@ -87,7 +87,7 @@ namespace OsEngine.Robots
         #region ================================Methods =============================================
         private void _tab_CandleFinishedEvent(List<Candle> candles)
         {
-            SaveCSVBar(candles);
+          //  SaveCSVBar(candles);
             if (candles.Count < _countDownCandles.ValueInt + 1
                 || candles.Count < _countCandles.ValueInt + 1)
             { return; }
@@ -147,7 +147,7 @@ namespace OsEngine.Robots
             _tab.CloseAtStop(pos, _lowCandle, _lowCandle - 100 * _tab.Securiti.PriceStep);
            // SaveCSV(pos);
         }
-
+/*
         private void SaveCSV(Position pos)
         {
             //@"Engine\trades.csv"  
@@ -197,9 +197,8 @@ namespace OsEngine.Robots
                     writer.WriteLine(str);
                 writer.Close();
             }
-
         }
-
+*/
 
         #endregion
     }
