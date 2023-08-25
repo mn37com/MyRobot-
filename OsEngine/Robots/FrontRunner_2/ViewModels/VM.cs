@@ -1,11 +1,13 @@
-﻿using OsEngine.Robots.FrontRunner.ViewModels;
+﻿using OsEngine.Robots.FrontRunner_2.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OsEngine.Robots.FrontRunner_2.Models;
+using OsEngine.Commands;
 using System.Windows.Input;
+
 
 namespace OsEngine.Robots.FrontRunner_2.ViewModels
 {
@@ -31,7 +33,7 @@ namespace OsEngine.Robots.FrontRunner_2.ViewModels
         }
         
 
-        public decimal Offset
+        public int Offset
         {
             get => _bot.Offset;
 
@@ -43,7 +45,7 @@ namespace OsEngine.Robots.FrontRunner_2.ViewModels
         }
 
 
-        public decimal Take
+        public int Take
         {
             get => _bot.Take;
 

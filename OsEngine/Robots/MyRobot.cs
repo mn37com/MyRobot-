@@ -145,7 +145,7 @@ namespace OsEngine.Robots
             decimal priceTake = pos.EntryPrice + _punkts * _profitKoef.ValueDecimal;
             _tab.CloseAtProfit(pos, priceTake, priceTake);
             _tab.CloseAtStop(pos, _lowCandle, _lowCandle - 100 * _tab.Securiti.PriceStep);
-            SaveCSV(pos);
+           // SaveCSV(pos);
         }
 
         private void SaveCSV(Position pos)

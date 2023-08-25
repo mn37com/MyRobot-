@@ -23,7 +23,6 @@ using OsEngine.Robots.Patterns;
 using OsEngine.Robots.Trend;
 using OsEngine.Robots.OnScriptIndicators;
 using OsEngine.Robots.Screeners;
-using OsEngine.Robots.FrontRunner;
 using OsEngine.Robots.FrontRunner_2.Models;
 
 namespace OsEngine.Robots
@@ -40,7 +39,6 @@ namespace OsEngine.Robots
             List<string> result = new List<string>();
 
             result.Add("FrontRunner_2Bot");
-            result.Add("FrontRunnerBot");
             result.Add("MyRobot");
             result.Add("SmaScreener");
             result.Add("Fisher");
@@ -124,11 +122,6 @@ namespace OsEngine.Robots
             if (nameClass == "FrontRunner_2Bot")
             {
                 bot = new FrontRunner_2Bot(name, startProgram);
-            }
-
-            if (nameClass == "FrontRunnerBot")
-            {
-                bot = new FrontRunnerBot(name, startProgram);
             }
 
             if (nameClass == "MyRobot")

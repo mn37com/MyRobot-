@@ -4,6 +4,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.4.33403.182
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OsEngine", "OsEngine", "{813FA674-29CB-43F9-8B99-EB1FABEE928B}"
+	ProjectSection(SolutionItems) = preProject
+		OsEngine\Commands\DelegateCommand.cs = OsEngine\Commands\DelegateCommand.cs
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OsEngine", "OsEngine\OsEngine.csproj", "{D5B52FC8-875D-4CBF-886B-B71F8D556341}"
 EndProject
